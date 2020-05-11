@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Быки и коровы</title>
+
+    <style>
+        body,
+        input {
+            font-size: 16px;
+        }
+
+        #error {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Быки и коровы</h1>
+
+    <form id="form">
+        <fieldset>
+            <p><label>Число: <input type="text" id="guess" autocomplete="off"></label></p>
+            <p><label>Быков: <input type="text" id="bulls" autocomplete="off"></label></p>
+            <p><label>Коров: <input type="text" id="cows" autocomplete="off"></label></p>
+            <p><input type="submit" value="Выполнить"></p>
+            <p id="error"></p>
+        </fieldset>
+    </form>
+
+    <h2>Ход игры</h2>
+    <div id="steps"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
